@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: navy;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: aqua;
+}
+
+.color_red, .green, .yellow, .orange, .black {
+    height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.row {
+    width: 100%;
+    background-color: cornflowerblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: aqua;
+    border-bottom: 2px solid lightblue;
+}
+
+.empty_circle {
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.red {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.blue {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.green {
+    height: 30px;
+    width: 30px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.yellow {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.orange {
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.pink {
+    height: 30px;
+    width: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.peg.white {
+    background-color: white;
+}
+
+.peg.black {
+    background-color: black;
+}
+
+.pegs {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+.circles {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.peg {
+    width: 10px;
+    height: 10px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    margin: 1px;
+    border: 1px solid black;
+}
+
+.hovered {
+    background-color: grey;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-top: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 8px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition-delay: 1.25s;
+    opacity: 0.75;
+  }
+
+  #replay:hover, #submit:hover, #delete_line:hover {
+    width: 28px;
+    height: 28px;
+  }
+
+  .active_r {
+    margin-top: 5px; 
+    background-color: royalblue; 
+    border-radius: 5px;
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mastermind</title>
+</head>
+<body>
+    <h1>MASTERMIND</h1>
+    <div class="container" style="width: 360px; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <div class="lost" style="display: none; border-radius: 15px; width: 360px; height: 505px; background-color: blue; position: absolute; opacity: 0.7; z-index: 3;"></div>
+        <div class="side" style="border-radius: 15px; padding: 10px; background-color: cornflowerblue; margin-right: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="stones red" draggable="true" style="background-color: red;"></div>
+            <div class="stones blue" draggable="true" style="background-color: blue;"></div>
+            <div class="stones green" draggable="true" style="background-color: green;"></div>
+            <div class="stones yellow" draggable="true" style="background-color: yellow;"></div>
+            <div class="stones orange" draggable="true" style="background-color: orange;"></div>
+            <div class="stones pink" draggable="true" style="background-color: pink;"></div>
+            <div class="tooltip" style="margin-top: 5px;"><img id="delete_line" src="./svgs/x-circle-fill.svg" style="height: 30px; background-color: white; border-radius: 50%; margin: 8px;"><span class="tooltiptext">delete line</span></div>
+            <div class="tooltip"><img id="replay" src="./svgs/bootstrap-reboot.svg" style="height: 30px; background-color: white; border-radius: 50%; margin: 8px;"><span class="tooltiptext">play again</span></div>
+            <div class="tooltip" style="border-bottom: 1px dotted black;"><img id="submit" src="./svgs/check-circle-fill.svg" style="height: 30px; background-color: white; border-radius: 50%; margin: 8px;"><span class="tooltiptext">submit</span></div>
+        </div>
+        <div class="main" style="border-radius: 15px; padding: 10px; background-color: cornflowerblue; width: 1400px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="row row_1 active_r"><span>1</span><div class="circles active"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_2"><span>2</span><div class="circles active"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_3"><span>3</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_4"><span>4</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_5"><span>5</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_6"><span>6</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_7"><span>7</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_8"><span>8</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_9"><span>9</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div class="row row_10"><span>10</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
