@@ -10,7 +10,10 @@
 <body>
     <h1>MASTERMIND</h1>
     <div class="container" style="width: 360px; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-        <div class="lost" style="display: none; border-radius: 15px; width: 360px; height: 505px; background-color: blue; position: absolute; opacity: 0.7; z-index: 3;"></div>
+        <div class="lost" style="display: none; border-radius: 15px; width: 360px; height: 505px; background-color: blue; position: absolute; opacity: 0.7; z-index: 3; flex-direction: column; justify-content: center; align-items: center;">
+            <h2 style="color: white;">Well Done!</h2>
+            <button id="play_again_win" style="padding: 10px 20px; font-size: 16px;">Play Again</button>
+        </div>
         <div class="side" style="border-radius: 15px; padding: 10px; background-color: cornflowerblue; margin-right: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <div class="stones red" draggable="true" style="background-color: red;"></div>
             <div class="stones blue" draggable="true" style="background-color: blue;"></div>
@@ -33,6 +36,7 @@
             <div class="row row_8"><span>8</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
             <div class="row row_9"><span>9</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
             <div class="row row_10"><span>10</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
+            <div style="display: none;" class="row row_11"><span>10</span><div class="circles"><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="empty_circle"></div><div class="pegs"><div class="peg"></div><div class="peg"></div><div class="peg"></div><div class="peg"></div></div></div></div>
         </div>
         
     <script src="script.js"></script>
