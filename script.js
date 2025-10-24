@@ -94,8 +94,33 @@ function showWin() {
 }
 
 function showLose() {
-    document.querySelector('.lost').style.display = 'flex'
-    document.querySelector('.lost h2').textContent = 'You\'ve Lost'
+    var lostDiv = document.querySelector('.lost')
+    lostDiv.style.display = 'flex'
+    lostDiv.querySelector('h2').textContent = 'You\'ve Lost'
+    var label = document.createElement('p')
+    label.textContent = 'The secret was:'
+    label.style.color = 'white'
+    label.style.margin = '10px 0 5px 0'
+    lostDiv.appendChild(label)
+    var secretDiv = document.createElement('div')
+    secretDiv.style.display = 'flex'
+    secretDiv.style.justifyContent = 'center'
+    secretDiv.style.alignItems = 'center'
+    secretDiv.style.opacity = 1
+    secretDiv.style.backgroundColor = 'white'
+    secretDiv.style.border = '1px solid black'
+    secretDiv.style.borderRadius = '10px'
+    for (var i = 0; i < to_guess.length; i++) {
+        var circle = document.createElement('div')
+        circle.style.width = '25px'
+        circle.style.height = '25px'
+        circle.style.borderRadius = '50%'
+        circle.style.backgroundColor = to_guess[i]
+        circle.style.margin = '0 5px'
+        circle.style.border = '2px solid white'
+        secretDiv.appendChild(circle)
+    }
+    lostDiv.appendChild(secretDiv)
     document.querySelector('.side').style.pointerEvents = 'none'
     document.getElementById('play_again_win').onclick = () => location.reload()
 }
